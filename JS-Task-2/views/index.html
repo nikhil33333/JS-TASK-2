@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="contents">
+                <a class="uk-button uk-button-default uk-position-center" href="#main-container" uk-toggle>Click here</a>
+                <div id="main-container" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body uk-text-secondary">
+
+                        {%for datacontent in data.calculator%}
+                        <div class="uk-flex left-content">
+                            <span class="label uk-flex-middle uk-flex">
+                                <span class="uk-badge uk-background-secondary">{{datacontent.no}}</span>
+                                <span class="uk-text-secondary text-label uk-text-normal uk-padding">{{datacontent.text}}</span>
+                            </span>
+                                <div class="">
+                                    <div class="uk-inline inputdata">
+                                        <span class="uk-form-icon uk-form-icon-flip">%</span>
+                                        <input class="uk-input dataInput" onkeydown="nullValueCheck(event)" onblur="totalValue()" type="tel" value={{datacontent.value}}>
+                                    </div>
+                                </div>
+                        </div>
+                        <hr>
+                        {%endfor%}
+                        
+                        <div class="uk-flex-right uk-flex total-flex">
+                            <h3 class="uk-margin-right uk-inline uk-margin-right uk-text-bolder">Total</h3>
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip">%</span>
+                                <input class="uk-input uk-disabled" id="totalvalue" type="number" value="100.0">
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

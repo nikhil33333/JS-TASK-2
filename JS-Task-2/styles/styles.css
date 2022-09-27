@@ -1,0 +1,45 @@
+.uk-modal-body {
+  background-color: #fff !important;
+}
+
+.uk-form-icon {
+  background-color: hsl(145deg, 49%, 60%);
+  color: #fff !important;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.total-flex {
+  height: 50px;
+}
+
+.text-label {
+  padding: 0px 25px !important;
+}
+
+.uk-badge {
+  min-width: 40px !important;
+  min-height: 40px !important;
+  font-size: 16px !important;
+}
+
+.uk-input {
+  border: 0px !important;
+  border-radius: 10px !important;
+  width: 200px !important;
+}
+
+.left-content {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 959px) {
+  .left-content {
+    flex-direction: column;
+  }
+  .text-label {
+    padding: 30px 5px !important;
+  }
+  .inputdata {
+    float: right;
+  }
+}/*# sourceMappingURL=styles.css.map */

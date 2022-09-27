@@ -1,0 +1,24 @@
+{
+    "calculator":[
+        {
+            "no":4,
+            "text":"What percentage of your data is personnel data(PII)?",
+            "value":40
+        },
+        {
+            "no":5,
+            "text":"What percentage of your data is sensitive intellectual property?",
+            "value":20
+        },
+        {
+            "no":6,
+            "text":"What percentage of your data is other sensitive data?",
+            "value":20
+        },
+        {
+            "no":7,
+            "text":"What percentage of your data is all other corporate non-sensitive data?",
+            "value":20
+        }
+    ]
+}
